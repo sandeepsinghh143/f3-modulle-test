@@ -1,0 +1,92 @@
+body{
+    margin: 50px;
+    font-size: 30px;
+}
+.ip-p{
+    font-weight: bold;
+}
+#ip-address{
+    color:green;
+}
+#get-data{
+    padding:15px 50px;
+    color:white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#generated-data{
+    display:none;
+}
+iframe{
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.outerflex{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.columns{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.bold{
+    font-weight: bold;
+}
+p span{
+    font-weight: normal;
+}
+.search{
+    width:100%;
+    position: relative;
+}
+.search input{
+    border:none;
+    box-sizing: border-box;
+    width:100%;
+    padding:10px 50px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.search input:focus{
+    outline: none;
+}
+.search i{
+    position: absolute;
+    font-size: 20px;
+    top:15px;
+    left:20px;
+    cursor: pointer;
+}
+
+#postalData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#postalData div{
+    width:45%;
+    padding:20px;
+    border-radius: 10px;
+    margin:20px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media only screen and (max-width:945px){
+    #postalData div{
+        width:100%;
+    }
+    .outerflex{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    #map-iframe{
+        height: 300px;
+    }
+}
+
